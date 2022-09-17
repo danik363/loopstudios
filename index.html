@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/tablet-query.css" media="(min-width:800px)">
+    <link rel="stylesheet" href="./src/css/laptop-query.css" media="(min-width:1024px)">
+    <link rel="stylesheet" href="./src/css/desktop-query.css" media="(min-width:1400px)">
+    <link rel="shortcut icon" href="./src/img/favicon-32x32.png" type="image/x-icon">
     <title>LoopStudios</title>
 </head>
 
@@ -18,6 +21,7 @@
         <header>
             <a class="logo-container" href="">
                 <img class="logo-img" src="./src/img/logo.svg" alt="Persona usando gafas de realidad virtual" />
+                
             </a>
             <span class="burguer-icon"> </span>
             <nav class="menu-container">
@@ -41,7 +45,10 @@
 
     <section class="aboutUs-section">
         <article>
-            <img class="aboutUs-img" src="./src/img/mobile/image-interactive.jpg" alt="Persona con gafas de realidad virtual" />
+            <picture>
+                <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-interactive.jpg" />
+                <img class="aboutUs-img" src="./src/img/mobile/image-interactive.jpg" alt="Chris standing up holding his daughter Elva" />
+            </picture>
             <div class="aboutUs__moreInfo">
                 <h2 class="more-info__title">THE LEADER IN INTERACTIVE VR</h2>
                 <p class="more-info__history">
@@ -54,41 +61,93 @@
         </article>
     </section>
     <section class="ourCreations-section">
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-deep-earth.jpg" alt="Planeta tierra">
-            <h2 class="ourCreation__title">DEEP <br> EARTH</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-night-arcade.jpg" alt="Arcade">
-            <h2 class="ourCreation__title">NIGHT <br> ARCADE</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-soccer-team.jpg" alt="Soccer">
-            <h2 class="ourCreation__title">SOCCER <br> TEAM <br> VR</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-grid.jpg" alt="Cars">
-            <h2 class="ourCreation__title">THE <br> GRID</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-from-above.jpg" alt="from about">
-            <h2 class="ourCreation__title">FROM UP <br> ABOVE VR</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-pocket-borealis.jpg" alt="pocket boreals">
-            <h2 class="ourCreation__title">POCKET <br> BOREALIS</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-curiosity.jpg" alt="Curiosity">
-            <h2 class="ourCreation__title">THE <br> CURIOSITY</h2>  
-        </article>
-        <article>
-            <img class="ourCreation-img" src="./src/img/mobile/image-fisheye.jpg" alt="fish eye">
-            <h2 class="ourCreation__title">MAKE IT <br> FISHEYE</h2>  
-        </article>
-
+        <h2 class="title-ourCreations-section">OUR CREATIONS</h2>
+        <div class="grid-ourProjects">
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-deep-earth.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-deep-earth.jpg" alt="Planeta tierra">
+                </picture>
+                
+                <h2 class="ourCreation__title">DEEP <br> EARTH</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-night-arcade.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-night-arcade.jpg" alt="Arcade">
+                </picture>
+                <h2 class="ourCreation__title">NIGHT <br> ARCADE</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-soccer-team.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-soccer-team.jpg" alt="Soccer">
+                </picture>
+                <h2 class="ourCreation__title">SOCCER <br> TEAM <br> VR</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-from-above.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-grid.jpg" alt="Cars">
+                </picture>
+                <h2 class="ourCreation__title">THE <br> GRID</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-from-above.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-from-above.jpg" alt="from about">
+                </picture>
+                <h2 class="ourCreation__title">FROM UP <br> ABOVE VR</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-pocket-borealis.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-pocket-borealis.jpg" alt="pocket boreals">
+                </picture>
+                <h2 class="ourCreation__title">POCKET <br> BOREALIS</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcsete="./src/img/desktop/image-curiosity.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-curiosity.jpg" alt="Curiosity">
+                </picture>
+                <h2 class="ourCreation__title">THE <br> CURIOSITY</h2>  
+            </article>
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./src/img/desktop/image-fisheye.jpg" />
+                    <img class="ourCreation-img" src="./src/img/mobile/image-fisheye.jpg" alt="fish eye">
+                </picture>
+                <h2 class="ourCreation__title">MAKE IT <br> FISHEYE</h2>  
+            </article>
+        </div>
+        <a class="button-ourCreation" href="#">SEE ALL</a>
     </section>
-
+    <footer>
+        <div class="footer-left-desk">
+            <a class="logo-container" href="">
+                <img class="logo-img" src="./src/img/logo.svg" alt="Persona usando gafas de realidad virtual" />
+            </a>
+            <ul class="menu-list footer">
+                <li class="list-item"><a href="#" class="link-item">About</a></li>
+                <li class="list-item"><a href="#" class="link-item">Carrers</a></li>
+                <li class="list-item"><a href="#" class="link-item">Events</a></li>
+                <li class="list-item">
+                    <a href="#" class="link-item">Products</a>
+                </li>
+                <li class="list-item"><a href="#" class="link-item">Suport</a></li>
+            </ul>
+        </div>
+        <div class="footer-right-desk">
+            <div class="socialNetworks">
+                <a href="#"><img src="./src/img/icon-facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="./src/img/icon-twitter.svg" alt="twiter"></a>
+                <a href="#"><img src="./src/img/icon-pinterest.svg" alt="pinterest"></a>
+                <a href="#"><img src="./src/img/icon-instagram.svg" alt="instagram"></a>
+            </div>
+            <p class="footer-copyright">©2021 Loopstudios, All rights reserved</p>
+        </div>
+        </footer>
     <script src="./src/js/main.js"></script>
 </body>
 

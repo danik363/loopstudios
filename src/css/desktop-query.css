@@ -1,0 +1,13 @@
+@media(min-width:1400px){
+    .more-info__title{
+        font-weight: 300;
+        font-size: 4rem;
+    }
+    .more-info__history{
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .background{
+        padding: 8rem;
+    };
+}

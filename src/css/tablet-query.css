@@ -1,0 +1,14 @@
+@media(min-width:800px){
+    .eslogan{
+        font-size: 5rem;
+    }
+
+    .background{
+        background: url("../img/desktop/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+   
+}
+
